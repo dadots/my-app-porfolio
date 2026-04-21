@@ -42,12 +42,6 @@ Open http://localhost:3000
 
 ---
 
-## 📸 Preview
-
-*Add screenshots here (optional)*
-
----
-
 ## 📦 Build
 
 ```bash
@@ -59,8 +53,8 @@ npm start
 
 ## 📬 Contact
 
-* GitHub: https://github.com/your-username
-* Email: [your-email@example.com](mailto:your-email@example.com)
+* GitHub: https://github.com/dadots
+* Email: dpbacate1994@gmail.com
 
 ---
 
