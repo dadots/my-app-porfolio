@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const SEO = {
-    siteUrl: "https://yourdomain.com",
+    siteUrl: "https://dadots-portfolio.vercel.app",
     title: "Dadots | Full Stack Developer",
     description:
         "Portfolio of Darius Paul Bacate — Full Stack Developer specializing in modern web applications.",
@@ -12,7 +12,7 @@ export const SEO = {
         "Next.js Developer",
         "React Developer",
     ],
-    ogImage: "/og-image.png", // or "/me.webp"
+    oogImage: "https://dadots-portfolio.vercel.app/me.webp",
 };
 
 export const menu = [
@@ -67,7 +67,7 @@ export const Bio = {
 };
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://yourdomain.com"),
+    metadataBase: new URL("https://dadots-portfolio.vercel.app/"),
 
     title: {
         default: `${Bio.name} | Full Stack Developer`,
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: `${Bio.name} | Portfolio`,
         description: Bio.description,
-        url: "https://yourdomain.com",
+        url: "https://dadots-portfolio.vercel.app",
         siteName: `${Bio.name} Portfolio`,
         images: [
             {
