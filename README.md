@@ -38,7 +38,7 @@ Open http://localhost:3000
 
 ## 🌍 Live Demo
 
-👉 https://your-vercel-url.vercel.app
+👉 https://dadots-portfolio.vercel.app/
 
 ---
 
