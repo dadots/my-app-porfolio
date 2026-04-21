@@ -50,6 +50,7 @@ function Button({
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean
+    "aria-label"?: string
   }) {
   const Comp = asChild ? Slot.Root : "button"
 

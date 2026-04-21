@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: true,
+});
 
-export default nextConfig;
+module.exports = withBundleAnalyzer(nextConfig);
