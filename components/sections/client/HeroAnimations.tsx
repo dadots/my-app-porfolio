@@ -136,7 +136,7 @@ export default function HeroAnimations({heroSkills, }: {heroSkills: {name: strin
                             group-hover:opacity-100 transition
                         " />
 
-                    <div className="relative h-80 w-80 rounded-full p-[2px] bg-gradient-to-tr from-emerald-400 to-emerald-300">
+                    <div className="relative h-56 w-56 sm:h-64 sm:w-64 md:h-80 md:w-80 rounded-full p-0.5 bg-linear-to-tr from-emerald-400 to-emerald-300">
                         <div className="relative h-full w-full overflow-hidden rounded-full bg-card">
                             <Image
                                 src={Bio.picture}

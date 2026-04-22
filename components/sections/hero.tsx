@@ -1,6 +1,7 @@
 import { coreSkills, skills } from "@/data/constants";
 import HeroAnimations from "./client/HeroAnimations";
 import HeroMouseEffect from "./client/HeroMouseEffect";
+import { ChevronDown } from "lucide-react";
 
 export default function Hero() {
     const allSkills = skills.flatMap(group => group.skills);
@@ -27,8 +28,18 @@ export default function Hero() {
                 <div className="absolute right-0 top-0 h-64 w-64 bg-emerald-400/5 blur-2xl" />
             </div>
 
-            <div className="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-2">
+            <div className="mx-auto grid max-w-7xl items-center gap-12 md:gap-20 md:grid-cols-2">
                 <HeroAnimations heroSkills={heroSkills} />
+            </div>
+
+            <div className="hidden md:flex absolute bottom-6 left-1/2 -translate-x-1/2 flex-col items-center gap-2">
+
+                <ChevronDown className="h-6 w-6 animate-bounce text-emerald-400 font-medium" />
+
+                <span className="text-xs text-emerald-400 uppercase tracking-wider">
+                    More below
+                </span>
+
             </div>
         </HeroMouseEffect>
     );
