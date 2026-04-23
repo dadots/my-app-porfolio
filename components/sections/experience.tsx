@@ -17,16 +17,14 @@ export default function Experience() {
       id="experience"
       className="
       py-24 md:py-32 relative
-      bg-gradient-to-b from-transparent via-black/20 to-transparent
+      bg-linear-to-b from-transparent via-black/20 to-transparent
       dark:via-black/40
     "
     >
-      {/* 🌌 background */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-b from-background to-muted" />
+        <div className="absolute inset-0 bg-linear-to-b from-background to-muted" />
       </div>
 
-      {/* 🔥 PANEL WRAPPER */}
       <div className="mx-auto max-w-6xl px-4">
         <div
           className="
@@ -43,7 +41,6 @@ export default function Experience() {
           overflow-hidden
         "
         >
-          {/* ✨ inset glass */}
           <div
             className="
             pointer-events-none absolute inset-0 rounded-3xl
@@ -52,10 +49,8 @@ export default function Experience() {
           "
           />
 
-          {/* ✨ panel glow */}
-          <div className="absolute -top-20 left-1/2 h-[300px] w-[300px] -translate-x-1/2 rounded-full bg-emerald-500/10 blur-[120px]" />
+          <div className="absolute -top-20 left-1/2 h-75 w-75 -translate-x-1/2 rounded-full bg-emerald-500/10 blur-[120px]" />
 
-          {/* HEADER */}
           <div className="text-center mb-16">
             <h2 className="text-3xl font-semibold text-foreground tracking-tight">
               Experience
@@ -65,14 +60,12 @@ export default function Experience() {
             </p>
           </div>
 
-          {/* TIMELINE */}
           <div className="relative">
-            {/* 🔥 animated line */}
             <motion.div
               initial={{ height: 0 }}
               whileInView={{ height: "100%" }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="absolute left-5 top-0 w-0.5 bg-gradient-to-b from-emerald-400/60 to-transparent"
+              className="absolute left-5 top-0 w-0.5 bg-linear-to-b from-emerald-400/60 to-transparent"
             />
 
             <div className="space-y-10">
@@ -84,13 +77,11 @@ export default function Experience() {
                   transition={{ delay: i * 0.08 }}
                   className="relative pl-12"
                 >
-                  {/* 🔥 DOT */}
                   <div className="absolute left-3.5 top-3 flex items-center justify-center">
                     <span className="absolute h-4 w-4 rounded-full bg-emerald-400/30 blur-md animate-pulse" />
                     <span className="h-3 w-3 rounded-full bg-emerald-400" />
                   </div>
 
-                  {/* 🔥 CARD */}
                   <div
                     className="
                     group relative rounded-2xl p-6
@@ -109,7 +100,6 @@ export default function Experience() {
                     hover:shadow-[0_20px_60px_rgba(16,185,129,0.15)]
                   "
                   >
-                    {/* ✨ inset glass (card) */}
                     <div
                       className="
                       pointer-events-none absolute inset-0 rounded-2xl
@@ -118,7 +108,6 @@ export default function Experience() {
                     "
                     />
 
-                    {/* HEADER */}
                     <div className="flex items-center gap-4">
                       <div
                         className="
@@ -145,12 +134,10 @@ export default function Experience() {
                       </div>
                     </div>
 
-                    {/* DATE */}
                     <p className="text-xs text-foreground/50 mt-2">
                       {exp.date}
                     </p>
 
-                    {/* DESC */}
                     <p className="text-sm text-foreground/70 mt-4 leading-relaxed">
                       {exp.desc}
                     </p>
@@ -159,7 +146,6 @@ export default function Experience() {
               ))}
             </div>
 
-            {/* 🔥 SHOW MORE */}
             {!showAll && experiences.length > 3 && (
               <div className="text-center mt-12">
                 <button
@@ -185,7 +171,6 @@ export default function Experience() {
               </div>
             )}
 
-            {/* 🔥 SHOW LESS */}
             {showAll && (
               <div className="text-center mt-12">
                 <button

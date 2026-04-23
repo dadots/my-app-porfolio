@@ -49,7 +49,7 @@ export default function Skills() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: i * 0.08 }}
                             className="
-                                group relative min-h-[260px] flex flex-col justify-start
+                                group relative min-h-65 flex flex-col justify-start
                                 overflow-hidden rounded-2xl p-5
 
                                 backdrop-blur-md
@@ -58,13 +58,12 @@ export default function Skills() {
                                 border border-border
 
                                 shadow-[0_10px_30px_rgba(0,0,0,0.08)]
-                                dark:shadow-[0_20px_60px_rgba(0,0,0,0.5)]
-
-                                hover:border-primary/40
-                                hover:-translate-y-1
-                                hover:shadow-md
-
                                 transition-all duration-300
+                                hover:-translate-y-2
+                                hover:scale-[1.02]
+                                hover:border-emerald-400/40
+
+                                hover:shadow-[0_20px_60px_rgba(16,185,129,0.15)]
 
                                 before:absolute before:inset-0 before:rounded-2xl
                                 before:bg-linear-to-b before:from-white/60 before:to-transparent
@@ -78,17 +77,14 @@ export default function Skills() {
                                 dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]
                             " />
 
-                            {/* glow */}
                             <div className="pointer-events-none absolute inset-0 opacity-0 hover:opacity-100 transition">
                                 <div className="absolute -top-10 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full bg-emerald-400/5 blur-2xl" />
                             </div>
 
-                            {/* TITLE */}
                             <h3 className="text-sm font-medium text-foreground mb-4">
                                 {group.title}
                             </h3>
 
-                            {/* SKILLS */}
                             <div className="flex flex-wrap gap-2">
                                 {group.skills.map((skill) => {
                                     const isCore = coreSkills.includes(skill.name);

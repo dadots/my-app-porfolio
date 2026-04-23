@@ -12,7 +12,7 @@ export const SEO = {
         "Next.js Developer",
         "React Developer",
     ],
-    oogImage: "https://dadots-portfolio.vercel.app/me.webp",
+    ogImage: "https://dadots-portfolio.vercel.app/me.webp",
 };
 
 export const menu = [
@@ -55,7 +55,7 @@ export const coreSkills = [
 
 export const Bio = {
     name: "Darius Paul Bacate",
-    picture: "/me.webp",
+    picture: "/me1.webp",
     roles: ["Full Stack Developer", "Web Developer", "Programmer"],
     description:
         "Eager and flexible, always up for new challenges. With a positive mindset and a thirst for growth, Always excited to learn and excel.",
@@ -285,6 +285,29 @@ export const skills = [
 export const experiences = [
     {
         id: 0,
+        img: "/work/cia.webp",
+        role: "Full-Stack Developer",
+        company: "Conversion Interactive Agency",
+        date: "Nov 2025 - Present",
+        desc: "Develop systems for the company related to transporting.",
+        skills: [
+            "Next JS",
+            "Nest JS",
+            "GitHub",
+            "Google Cloud Platform",
+            "TypeScript",
+            "PostgreSQL",
+            "Node Js",
+            "Insomnia",
+            "Tailwind",
+            "Shadcdn",
+            "Jira",
+            "Redis",
+            "Framer Motion",
+        ],
+    },
+    {
+        id: 1,
         img: "/work/vss.webp",
         role: "Full-Stack Developer",
         company: "Virtual Staffing Solutions",
@@ -312,7 +335,7 @@ export const experiences = [
         ],
     },
     {
-        id: 0,
+        id: 2,
         img: "/work/acn.webp",
         role: "Senior Software Engineer",
         company: "Accenture Inc.",
@@ -335,7 +358,7 @@ export const experiences = [
         ],
     },
     {
-        id: 0,
+        id: 3,
         img: "/work/globe.png",
         role: "Full-Stack Developer",
         company: "Globe Telecom Inc.",
@@ -358,7 +381,7 @@ export const experiences = [
         doc: "/work/globe-awards.webp",
     },
     {
-        id: 1,
+        id: 4,
         img: "/work/oa.png",
         role: "Mobile Developer (IOS)",
         company: "OVP Technologies Inc.",
@@ -368,7 +391,7 @@ export const experiences = [
         doc: "/work/paydro.webp",
     },
     {
-        id: 2,
+        id: 5,
         img: "/work/oa.png",
         role: "Web Developer ",
         company: "Orange Apps Inc.",
