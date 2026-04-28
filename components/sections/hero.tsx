@@ -12,37 +12,37 @@ export default function Hero() {
     );
 
     return (
-        <HeroMouseEffect>
-            <div className="absolute inset-0 -z-10">
-                <div className="absolute inset-0 bg-linear-to-br from-background via-background to-emerald-50/40 dark:to-transparent" />
+            <HeroMouseEffect>
+                <div id="home" className="absolute inset-0 -z-10">
+                    <div className="absolute inset-0 bg-linear-to-br from-background via-background to-emerald-50/40 dark:to-transparent" />
 
-                <HeroBgAnimation />
+                    <HeroBgAnimation />
 
-                <div
-                    className="
-                        pointer-events-none absolute inset-0
-                        [background:radial-gradient(600px_circle_at_var(--x)_var(--y),rgba(16,185,129,0.04),transparent_60%)]
-                    "
-                />
+                    <div
+                        className="
+                            pointer-events-none absolute inset-0
+                            [background:radial-gradient(600px_circle_at_var(--x)_var(--y),rgba(16,185,129,0.04),transparent_60%)]
+                        "
+                    />
 
-                <div className="absolute left-1/2 top-1/3 h-100 w-100 -translate-x-1/2 rounded-full bg-emerald-400/10 blur-[80px]" />
+                    <div className="absolute left-1/2 top-1/3 h-100 w-100 -translate-x-1/2 rounded-full bg-emerald-400/10 blur-[80px]" />
 
-                <div className="absolute right-0 top-0 h-64 w-64 bg-emerald-400/5 blur-2xl" />
-            </div>
+                    <div className="absolute right-0 top-0 h-64 w-64 bg-emerald-400/5 blur-2xl" />
+                </div>
 
-            <div className="mx-auto grid max-w-7xl items-center gap-12 md:gap-20 md:grid-cols-2">
-                <HeroAnimations heroSkills={heroSkills} />
-            </div>
+                <div className="mx-auto grid max-w-7xl items-center gap-12 md:gap-20 md:grid-cols-2">
+                    <HeroAnimations heroSkills={heroSkills} />
+                </div>
 
-            <div className="hidden md:flex absolute bottom-6 left-1/2 -translate-x-1/2 flex-col items-center gap-2">
+                <div className="hidden md:flex absolute bottom-6 left-1/2 -translate-x-1/2 flex-col items-center gap-2">
 
-                <ChevronDown className="h-6 w-6 animate-bounce text-emerald-400 font-medium" />
+                    <ChevronDown className="h-6 w-6 animate-bounce text-emerald-400 font-medium" />
 
-                <span className="text-xs text-emerald-400 uppercase tracking-wider">
-                    More below
-                </span>
+                    <span className="text-xs text-emerald-400 uppercase tracking-wider">
+                        More below
+                    </span>
 
-            </div>
-        </HeroMouseEffect>
+                </div>
+            </HeroMouseEffect>
     );
 }
