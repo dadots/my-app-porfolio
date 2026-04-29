@@ -64,6 +64,7 @@ export const Bio = {
         "https://drive.google.com/file/d/1xM-fQjfXU-41W6mse31KACVUPq5KBF16/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/darius-paul-bacate-03805813a/",
     facebook: "https://www.facebook.com/iezbay",
+    yearExperience: 8
 };
 
 export const metadata: Metadata = {

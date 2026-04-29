@@ -167,7 +167,7 @@ export default function HeroAnimations({ heroSkills, }: { heroSkills: { name: st
                                 whitespace-nowrap
                                 shadow-lg
                             ">
-                                8+ Years Experience
+                                {Bio.yearExperience} Years Experience
                             </span>
 
                         </div>

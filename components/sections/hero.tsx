@@ -1,8 +1,8 @@
 import { coreSkills, skills } from "@/data/constants";
 import HeroAnimations from "./client/HeroAnimations";
 import HeroMouseEffect from "./client/HeroMouseEffect";
-import { ChevronDown } from "lucide-react";
 import HeroBgAnimation from "./client/HeroBgAnimation";
+import HeroQuoteAnimation from "./client/HeroQuoteAnimation";
 
 export default function Hero() {
     const allSkills = skills.flatMap(group => group.skills);
@@ -13,7 +13,7 @@ export default function Hero() {
 
     return (
             <HeroMouseEffect>
-                <div id="home" className="absolute inset-0 -z-10">
+                <div className="absolute inset-0 -z-10">
                     <div className="absolute inset-0 bg-linear-to-br from-background via-background to-emerald-50/40 dark:to-transparent" />
 
                     <HeroBgAnimation />
@@ -32,16 +32,12 @@ export default function Hero() {
 
                 <div className="mx-auto grid max-w-7xl items-center gap-12 md:gap-20 md:grid-cols-2">
                     <HeroAnimations heroSkills={heroSkills} />
+
+                    <HeroQuoteAnimation />
                 </div>
 
-                <div className="hidden md:flex absolute bottom-6 left-1/2 -translate-x-1/2 flex-col items-center gap-2">
-
-                    <ChevronDown className="h-6 w-6 animate-bounce text-emerald-400 font-medium" />
-
-                    <span className="text-xs text-emerald-400 uppercase tracking-wider">
-                        More below
-                    </span>
-
+                <div className="absolute bottom-0 left-0 w-full flex justify-center z-20 pointer-events-none">
+                    <div className="w-[80%] h-px bg-linear-to-r from-transparent via-emerald-400/40 to-transparent blur-[1px]" />
                 </div>
             </HeroMouseEffect>
     );

@@ -28,6 +28,7 @@ export default function HeroMouseEffect({
 
     return (
         <section
+            id="home"
             ref={ref}
             onMouseMove={handleMove}
             className="relative flex min-h-screen items-center px-6 pt-16 overflow-hidden"
