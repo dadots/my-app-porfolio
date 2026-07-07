@@ -61,7 +61,7 @@ export const Bio = {
         "Eager and flexible, always up for new challenges. With a positive mindset and a thirst for growth, Always excited to learn and excel.",
     github: "https://github.com/dadots",
     resume:
-        "https://drive.google.com/file/d/1xM-fQjfXU-41W6mse31KACVUPq5KBF16/view?usp=sharing",
+        "https://drive.google.com/file/d/1-ZVoioL4l8H_W7sopM69lOL9KykMA71O/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/darius-paul-bacate-03805813a/",
     facebook: "https://www.facebook.com/iezbay",
     yearExperience: 8
